@@ -15,7 +15,7 @@ RUN cd /go/src/github.com/m3db/m3/ && \
     make m3aggregator
 
 # stage 2: lightweight "release"
-FROM alpine:3.11
+FROM alpine:3.12
 LABEL maintainer="The M3DB Authors <m3db@googlegroups.com>"
 
 EXPOSE 5000/tcp 6000/tcp 6001/tcp

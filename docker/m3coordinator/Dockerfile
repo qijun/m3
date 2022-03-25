@@ -15,7 +15,7 @@ RUN cd /go/src/github.com/m3db/m3/ && \
     make m3coordinator
 
 # stage 2: lightweight "release"
-FROM alpine:3.11
+FROM alpine:3.12
 LABEL maintainer="The M3DB Authors <m3db@googlegroups.com>"
 
 # Provide timezone data to allow TZ environment variable to be set
